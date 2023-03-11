@@ -1,0 +1,20 @@
+DONE Create virtual environment
+DONE Install Django
+DONE Create Django project
+DONE Create app for base pages
+    name 'core'
+    add to setting under instaled-app section
+Create some templates, views
+Implement tailwind css
+Create app for users
+Set up authentication
+    Sign up
+    Log in 
+    Log out
+Create app for links
+    Models for links and category
+    Views
+Create app for dashboard
+Implement limitations
+Implement a payment gateway (dj-stripe)
+Deploy (?)
