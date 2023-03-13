@@ -4,9 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <title> {% block title %}{% endblock title %} | Lynko </title>
     </head>
     
     <body>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
+        <nav class="p-6 bg-gray-800 flex items-center justify-between">
+            <a href="/" class="text-xl text-cyan-500">Lynko</a>
+
+            <div class="space-x-4 text-white">
+                <a href="{% url 'core:about' %}">About</a>
+                <a href="{% url 'core:pricing' %}">Pricing</a>
+
+                <!-- Login Authentication Verification -->
+                <!-- If user is authenticated then hide signup, login buttons-->
+                {% if request.user.is_authenticated %}
+
+                <!-- Else display signup, login buttons if user is not signin -->
+                {% else %}
+                    <a href="{% url 'accounts:signup' %}" class="py-4 px-6 bg-cyan-600 rounded-xl">Sign up</a>
+                    <a href="{% url 'accounts:login' %}" class="py-4 px-6 bg-gray-600 rounded-xl">Log in</a>
+                {% endif %}
+                <!-- END Login Authentication Verification -->
+            </div>
+        </nav>
+
+        <main class="p-6">
+            {% block content %}
+            
+            {% endblock content %}
+        </main>
+        
+        <footer class="p-6 bg-gray-900">
+            <p class="text-xs text-gray-400">Copyright (c) 2023 - Lynko</p>
+        </footer>
     </body>
 </html>

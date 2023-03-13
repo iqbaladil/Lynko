@@ -4,11 +4,15 @@ DONE Create Django project
 DONE Create app for base pages
     name 'core'
     add to setting under instaled-app section
-Create some templates, views
-Implement tailwind css
-Create app for users
+DONE Create some templates, views
+    base.html
+    index.html
+    about.html
+    pricing.html
+DONE Implement tailwind css
+DONE Create app for users
 Set up authentication
-    Sign up
+    DONE Sign up
     Log in 
     Log out
 Create app for links
