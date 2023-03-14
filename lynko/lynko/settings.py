@@ -15,6 +15,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGOUT_REDIRECT_URL = '/'
+
 AUTH_USER_MODEL = 'accounts.User'
 
 
@@ -29,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'core',
+    'link',
 ]
 
 MIDDLEWARE = [

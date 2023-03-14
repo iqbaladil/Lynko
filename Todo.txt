@@ -11,12 +11,12 @@ DONE Create some templates, views
     pricing.html
 DONE Implement tailwind css
 DONE Create app for users
-Set up authentication
+DONE Set up authentication
     DONE Sign up
-    Log in 
-    Log out
+    DONE Log in 
+    DONE Log out
 Create app for links
-    Models for links and category
+    DONE Models for links and category
     Views
 Create app for dashboard
 Implement limitations
