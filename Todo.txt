@@ -15,9 +15,9 @@ DONE Set up authentication
     DONE Sign up
     DONE Log in 
     DONE Log out
-Create app for links
+DONE Create app for links
     DONE Models for links and category
-    Views
+    DONE Views
 Create app for dashboard
 Implement limitations
 Implement a payment gateway (dj-stripe)
