@@ -15,6 +15,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Redirect to login page if there is have access to logged page.
+LOGIN_URL = '/login/'
+
+# Redirect to dashboard after you login
+LOGIN_REDIRECT_URL = '/dashboard/'
+
+# Redirect to home page after you logged out
 LOGOUT_REDIRECT_URL = '/'
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -32,6 +39,7 @@ INSTALLED_APPS = [
     'accounts',
     'core',
     'link',
+    'dashboard',
 ]
 
 MIDDLEWARE = [

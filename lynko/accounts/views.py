@@ -17,7 +17,7 @@ def signup(request):
                 login(request, user)
 
                 # Redirect to home page after successfully login
-                return redirect('/')
+                return redirect('/dashboard/')
     else:
         form = SignupForm()
 
