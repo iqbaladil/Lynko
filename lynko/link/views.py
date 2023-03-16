@@ -21,7 +21,7 @@ def create_link(request):
             link.created_by = request.user
             link.save()
 
-            return redirect('/')
+            return redirect('/dashboard/')
     else:
         form = LinkForm()
 
@@ -45,7 +45,7 @@ def create_category(request):
             category.created_by = request.user
             category.save()
 
-            return redirect('/')
+            return redirect('/dashboard/')
     else:
         form = CategoryForm()
 

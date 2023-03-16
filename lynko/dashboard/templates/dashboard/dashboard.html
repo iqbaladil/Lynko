@@ -3,6 +3,17 @@
 {% block title %}Dashboard{% endblock title %}
 
 {% block content %}
-    <h1 class="text-xl">Dashboard Lynko</h1>
+    <h1 class="mb-6 text-xl">Dashboard</h1>
+
+    <div class="p-6 bg-gray-100 rounded-xl">
+        <h2 class="mb-4 text-xl">Newest Links</h2>
+
+        {% for link in newest_links %}    
+            <div class="mb-2 flex justify-between items-center">
+                <p>{{ link.name }}</p>
+                <a href="{{ link.url }}" class="underline" target="__blank">Open Link</a>
+            </div>
+        {% endfor %}
+    </div>
 
 {% endblock content %}
