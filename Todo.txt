@@ -18,7 +18,7 @@ DONE Set up authentication
 DONE Create app for links
     DONE Models for links and category
     DONE Views
-Create app for dashboard
+DONE Create app for dashboard
 Category list page
     Edit category
     Delete category
