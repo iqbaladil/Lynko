@@ -24,7 +24,8 @@ DONE Category list page
     DONE Delete category
 DONE Edit link
 DONE Delete link
-Add category filter on the links page
+DONE Add category filter on the links page
 Implement limitations
+    For this example only: free user can have only 5 links, pro user can have >5.
 Implement a payment gateway (dj-stripe)
 Deploy (?)

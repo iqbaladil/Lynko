@@ -5,10 +5,15 @@ from .models import Category, Link
 
 @login_required
 def links(request):
+    category = request.GET.get('category', '')
     links = Link.objects.filter(created_by=request.user)
+
+    if category:
+        link = links.filter(category_id=category)
 
     return render(request, 'link/links.html', {
         'links': links,
+        'category': category,
     })
 
 
