@@ -7,4 +7,5 @@ urlpatterns = [
     path('links/', include('link.urls')),
     path('dashboard/', include('dashboard.urls')),
     path('admin/', admin.site.urls),
+    path('stripe/', include('djstripe.urls', namespace='djstripe')),
 ]

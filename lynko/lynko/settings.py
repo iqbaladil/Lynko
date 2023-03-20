@@ -26,6 +26,13 @@ LOGOUT_REDIRECT_URL = '/'
 
 AUTH_USER_MODEL = 'accounts.User'
 
+# dj-stripe payment gateway
+STRIPE_TEST_PUBLIC_KEY ='pk_test_51MnNTyAd9XAWelNeziWS7DYSTW0WumhQlFEf7GHibgriHmI2hYlltL7uQC2QqSO9fFqPNSn7PmxvIeWFqRSNzvhZ00QIZkUfFj'
+STRIPE_TEST_SECRET_KEY = 'sk_test_51MnNTyAd9XAWelNetfcXsm1IwbVy8PIISsCGKZZghURTpOefZVqjawaTzYmtUrpcLejX5JKmYUJrtnfw6ytKLxsb00uf0WUWhM'
+STRIPE_LIVE_MODE = False  # Change to True in production
+DJSTRIPE_WEBHOOK_SECRET = "whsec_xxx"
+DJSTRIPE_FOREIGN_KEY_TO_FIELD = "id"
+
 
 # Application definition
 
@@ -40,6 +47,7 @@ INSTALLED_APPS = [
     'core',
     'link',
     'dashboard',
+    'djstripe',
 ]
 
 MIDDLEWARE = [
